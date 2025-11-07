@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RPG Maker Games</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>RPG Maker Games</h1>
+    <p>Select a game below. Each game runs at <code>/games/&lt;slug&gt;/</code>.</p>
+  </header>
+
+  <main class="container">
+    <div id="games-grid" class="grid"></div>
+
+    <section id="preview" class="preview hidden">
+      <div class="preview-bar">
+        <h2 id="preview-title"></h2>
+        <div class="spacer"></div>
+        <a id="open-full" class="btn" target="_blank" rel="noopener">Open full page</a>
+        <button id="close-preview" class="btn btn-secondary">Close</button>
+      </div>
+      <iframe id="preview-frame" title="Game preview" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Hosted on GitHub Pages • Drop each exported game into <code>/games/&lt;slug&gt;/</code>.</small>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
+
